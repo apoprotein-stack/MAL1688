@@ -10,7 +10,7 @@
     <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
     <!-- 引入 Babel 用於瀏覽器中編譯 JSX -->
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.23.3/babel.min.js"></script>
     <!-- 引入 Lucide 圖標 CDN -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
@@ -35,13 +35,6 @@
 
     <!-- 載入我們編寫的 React 元件代碼 -->
     <script type="text/babel">
-        const { 
-          Users, Dna, Activity, ChevronRight, Linkedin, Mail, X, Zap, 
-          ShieldCheck, Heart, Sparkles, ArrowUpRight, TrendingUp, Sliders, 
-          CheckCircle2, Atom, Globe, Award, BookOpen, MessageSquare, Copy, 
-          Check, Smartphone, Flame, Shield, HelpCircle, UserCheck
-        } = lucide;
-
         function App() {
           const [activeTab, setActiveTab] = React.useState('all');
           const [selectedLeader, setSelectedLeader] = React.useState(null);
